@@ -1,0 +1,128 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import url('https://fonts.google.com/specimen/Fraunces');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:#f3eae3 !important;    
+    min-height: 100vh;
+}
+.card{
+    background: #ffff;
+    border-radius: 10px !important;
+    border: #ffff !important;
+    max-width: 50%;
+}
+.preview{
+    min-height: 100vh;
+}
+img{
+    max-height: 63vh;
+    border-radius: 10px 0 0 10px;
+}
+.proimg{
+    background: url('images/image-product-desktop.jpg');
+}
+.perfum{
+    color: #adaeb2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+.card label{
+    font-family:'Fraunces', serif;
+    font-weight: 700;
+    line-height: 29px;
+    font-size: 33px;
+    
+    
+}
+.productcontent{
+    color: #adaeb2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;    
+}
+.price{
+    color: #51806e;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 33px; 
+   
+}
+.card p span{
+    color: #51806e;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 400;
+    font-size: 12px; 
+    text-decoration: line-through; 
+        
+}
+.review{
+    min-height: 63vh;
+}
+.btn{   
+    color: white !important;
+}
+button{
+    background: #51806e !important;   
+}
+.shoppingcart{
+    filter: brightness(0) invert(1);    
+}
+
+@media (min-width:320px) and (max-width:575px){
+    .productimg{
+        max-height: 25vh;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px !important;
+    }
+    .review{
+        flex-direction: column;
+    }
+    .card {
+        max-width: 100% !important;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .card{
+        max-width: 100%;
+    }
+    .productimg{
+        max-height: 76vh !important;
+        border-radius: 10px 10px 0px 0px !important;
+        width: 100%;
+    }
+    p{
+        margin: 0px;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    .card{
+        max-width: 80%;
+    }
+    .productimg{
+        max-height: 40vh !important;
+        border-radius: 10px 10px 0px 0px !important;
+        width: 100%;
+    }
+    .review{
+        flex-direction: column;
+    }
+    p{
+        margin: 0px;
+    }
+}
+@media (min-width:992px) and (max-width:1200px){
+    .card{
+        max-width: 60%;
+    }
+    .productimg{
+        max-height: 76vh !important;
+    }
+    p{
+        margin: 0px;
+    }
+}
